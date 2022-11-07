@@ -65,3 +65,10 @@ val sumaDos=(a:Int,b:Int)=>a+b
 nums.map(x=>sumaDos(x,x))
 
 
+def isEven(k:Int): Int=(k % 2)match{
+    case 0 =>1
+    case _ =>1
+
+
+}
+def countEven(s: List[Int]):Int= s.map(isEven).sum

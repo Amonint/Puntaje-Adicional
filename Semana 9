@@ -1,0 +1,41 @@
+/* Reactive streams
+-----Definición---------------------------------------------------------------
+  -Iniciativa para proporcionar un estándar para el procesamiento de flujos de
+  datos de una forma:
+  -Asíncrona
+  -Back pressure (contrapresión) y
+  -Sin bloqueo
+
+
+
+-----¿Cómo se expresa un flujo de datos estas son las subdivisiones?-------
+Observable
+                                              Consumidor
+                                               Subscriber
+                                                Observer
+ Productor
+  Publisher
+  Source
+
+----Back pressure---
+  Quien consume los datos está en la capacidad de señalar cuántos datos
+  puede recibir.
+
+
+---Sin bloqueo----
+  El procesamiento se hace sin bloqueo.
+  Ejemplo:
+    Computador procesa usando Threads.
+    Thread pueden dedicarse a una tarea específica
+    Thread mientras espera, puede dedicarse a otras actividades.
+ 
+---En java--- 
+Algunos programas tienen su propias implementaciones para manejar
+reactive streams.
+Por ejemplo: Java
+Desde Java 9 existe un soporte nativo para reactive streams.
+java.util.concurrent.Flow
+Publisher - subscribe(, submit(), close()
+Subscriber - onSubscribe(), onNext(), onError(), y onComplete(.
+
+ */
